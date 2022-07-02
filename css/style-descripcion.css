@@ -1,0 +1,87 @@
+.description {
+  background-color: #eee;
+  position: relative;
+  z-index: 0;
+}
+
+.description h2 {
+  text-align: center;
+  color: rgb(75, 75, 75);
+  margin: 0;
+}
+
+.desc-container {
+  display: flex;
+  padding-top: 3%;
+}
+
+.card {
+  display: flex;
+  padding-left: 4%;
+  padding-right: 4%;
+  flex-direction: column;
+  position: relative;
+}
+
+.card div {
+  width: 100%;
+  height: 200px;
+}
+
+.content {
+  color: rgb(75, 75, 75);
+}
+
+.card .content p {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  text-align: center;
+  font-size: 90%;
+}
+
+.card .image {
+  position: relative;
+}
+
+.card .image img {
+  position: absolute;
+  height: 85%;
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 8.3%;
+}
+
+.image2 {
+  position: relative;
+}
+
+.image2 img {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  bottom: 30px;
+  padding-left: 15%;
+}
+
+.card div,
+.card div {
+  background-color: #aedbce2f;
+}
+
+.desc-container .header {
+  width: 270px;
+  background-color: #b3d4d3;
+  position: absolute;
+  height: auto;
+  z-index: 1;
+  transform: translateY(-50%);
+  left: 100px;
+}
+
+.header a {
+  color: rgb(75, 75, 75);
+  font-size: 80%;
+  font-weight: 550;
+  padding: 9%;
+}

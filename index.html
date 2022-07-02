@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unitec</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+        <link rel="stylesheet" href="/css/style-footer.css">
+        <link rel="stylesheet" href="/css/style-map.css">
+        <link rel="stylesheet" href="/css/style-navbar.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/style-descripcion.css">
+        <link rel="stylesheet" href="/css/style-sectores.css">
+</head>
+<body>
+    <section class="banner" >
+        <button class="go-down"><img src="/src/img/flecha.png" class="arrow" ></button>    
+        <div class="logo-container">
+            <img src="/src/img/Logo Unitec.png" class="logo-banner">
+            <p class="title">Uidet Unitec</p>
+        </div>
+    </section>
+    <nav class="nav-bar go-top">
+        <div class="logo">
+            <img src="/src/img/Logo Unitec.png" class="logo">
+        </div>
+        <ul class="nav-links">
+            <button><a>Historia</a></button>
+            <button><a>Proyectos</a></button>
+            <button><a>Información</a></button>
+            <a class="btn"><button class="btn-contact">Contacto</button></a>
+        </ul>            
+    </nav>
+    <section class="description">
+        <br>
+        <h2>Sobre nosotros</h2>
+        <div class="desc-container">
+            <div class="card">
+                <div class="header">
+                    <a>¿Que Somos?</a>
+                </div>
+                <div class="image">
+                    <img src="/src/img/Dibujo1.JPG">
+                </div>
+                    <div class="content">
+                        <p>Unidad de Investigación, Desarrollo, Extensión y Transferencia para la Calidad de la Educación en Ingeniería con
+                        orientación al uso de TIC</p>
+                    </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                <a>Nuestros objetivos</a>
+                </div>
+                <div class="content">
+                    <p>Desarrollo de adaptaciones tecnológicas (Hardware y Software) para mejorar la calidad de vida de Personas con
+                        Discapacidad.</p>
+                </div>
+                <div class="image2">
+                    <img src="/src/img/Dibujo2.JPG">
+                </div>
+            </div>    
+    </section>
+    <section class="sectors">
+        <br>
+        <h2>Nuestros espacios de trabajo</h2>
+        <br>
+        <div class="background-carrousel">
+            <div class="carrousel">
+                <div class="carrousel-items"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section-map">
+        <br>
+        <h2>¿Donde nos encotramos?</h2>
+        <br>
+        <div class="border-map">
+            <div id="map"></div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="contacts">
+            <br>
+            <a>Email: Uniteconline@gmail.com</a>
+            <br>
+            <a>Unitec@ing.unlp.edu.ar</a>
+            <br>
+            <a>Tel: (+54) (221) 425-8911 - Interno 3508 </a>
+        </div>
+    </footer>
+</body>
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+<script src="/js/script.js"></script>
+<script src="/js/script-sectores.js"></script>
+</html>

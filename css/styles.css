@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito";
+  font-size: 20px;
+  background-color: #eee;
+}
+
+section {
+  width: 100%;
+  border-bottom: solid 1px #00000044;
+}
+
+.banner {
+  background-color: rgb(170, 170, 187);
+  display: flex;
+  justify-content: right;
+  background-image: url("/src/img/bannerm prueba.jpg");
+  background-size: 100% 100%;
+  border: none;
+}
+
+.banner .logo-banner {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  justify-content: left;
+}
+
+.logo-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000044;
+  backdrop-filter: blur(4px);
+  color: #000000;
+}
+
+.banner .title {
+  font-size: 250%;
+  margin: 0px;
+  padding-left: 25px;
+  font-family: "Poppins", monospace;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  color: rgb(75, 75, 75);
+}
+
+.banner p {
+  padding-left: 25px;
+}
+
+.banner button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  top: 80%;
+  left: 49%;
+  cursor: pointer;
+  z-index: 25;
+  width: 50px;
+  height: 50px;
+}
+
+.banner .arrow {
+  position: absolute;
+  top: -20%;
+  right: -17%;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: rgba(249, 249, 249, 0.116);
+}
+
+.banner button :hover {
+  background-color: rgba(249, 249, 249, 0.5);
+  transition: 0.1s;
+  transform: scale(1.1, 1.1);
+}

@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.sectors {
+  background-color: #aedbce2f;
+}
+
+.sectors h2 {
+  text-align: center;
+  color: rgb(75, 75, 75);
+  margin: 0;
+}
+
+.background-carrousel {
+  background-color: #eee;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 75%;
+}
+
+.carrousel {
+  width: 600px;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.carrousel-items {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  z-index: 1;
+}
+
+.carrousel-item {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.4s ease;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  transform: scale(0.6);
+}
+
+.carrousel-item img {
+  width: 100%;
+  height: auto;
+  flex-grow: 0.5;
+}
+
+.carrousel-item .info-card {
+  font-family: "Poppins", sans-serif;
+  padding-left: 12px;
+  color: rgb(75, 75, 75);
+}
+
+.left {
+  display: flex;
+  transform: translateX(-60%) scale(0.6) translateY(-5%);
+  z-index: 0;
+  opacity: 0.5;
+  box-shadow: 5px 5px 23px 1px rgba(0, 0, 0, 0.79);
+}
+
+.center {
+  display: flex;
+  transform: translateX(0) scale(0.8) translateY(-5%);
+  z-index: 1;
+  opacity: 1;
+
+  box-shadow: 5px 5px 23px 1px rgba(0, 0, 0, 0.79);
+}
+
+.rigth {
+  display: flex;
+  transform: translateX(60%) scale(0.6) translateY(-5%);
+  z-index: 0;
+  opacity: 0.5;
+  box-shadow: 5px 5px 23px 1px rgba(0, 0, 0, 0.79);
+}
+
+.rigth p {
+  opacity: 0;
+}
+
+.rigth h3 {
+  text-align: right;
+  padding-right: 12px;
+}
+
+.left p {
+  opacity: 0;
+}
+
+.center p {
+  opacity: 1;
+}
+
+.click-area {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  z-index: 100;
+}
+
+.info-container {
+  height: 80px;
+  overflow-y: scroll;
+}
+
+.info-container::-webkit-scrollbar {
+  background-color: #eee;
+  width: 8px;
+}
+
+.info-container::-webkit-scrollbar-thumb {
+  background-color: #00000033;
+}
+
+.info-container::-webkit-scrollbar-track {
+  background-color: #00000027;
+}
