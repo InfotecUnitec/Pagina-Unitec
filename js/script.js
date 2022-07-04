@@ -66,7 +66,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 let LabUnitec = L.icon({
-  iconUrl: "/src/img/Logo Unitec.png",
+  iconUrl: "./src/img/logo/Logo Unitec.png",
 
   iconSize: [35, 35], // size of the icon
   iconAnchor: [30, 30], // point of the icon which will correspond to marker's location

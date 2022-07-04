@@ -1,8 +1,8 @@
 const src = [
-  "Late.jpg",
-  "Late.jpg",
-  "Sistema2.jpg",
-  "Late.jpg",
+  "logo-late.jpeg",
+  "logo-edetec.jpeg",
+  "logo-tecnicas3d.jpeg",
+  "logo-mecatronica.jpeg",
   "logolabtic.png",
   "Infotec.png",
 ];
@@ -27,7 +27,7 @@ let actualCard = 0;
 
 const templateCard = (label, id, src, descripcion) => {
   return `<div class="carrousel-item">
-  <img src="/src/img/${src}" />
+  <img src="./src/img/logo/${src}" />
   <div class="info-card">
   <h3>${label}</h3>
   <div class="info-container">

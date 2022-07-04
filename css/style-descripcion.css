@@ -12,6 +12,20 @@
 
 .desc-container {
   display: flex;
+  flex-direction: row-reverse;
+}
+
+.desc-news {
+  background-color: #aedbce5d;
+  width: 100%;
+  height: 600px;
+  padding-top: 9%;
+
+}
+
+.desc-column {
+  display: flex;
+  flex-direction: column;
   padding-top: 3%;
 }
 
@@ -24,8 +38,8 @@
 }
 
 .card div {
-  width: 100%;
-  height: 200px;
+  width: 60%;
+  height: 170px;
 }
 
 .content {
@@ -66,10 +80,10 @@
 
 .card div,
 .card div {
-  background-color: #aedbce2f;
+  background-color: #aedbce5d;
 }
 
-.desc-container .header {
+.desc-column .header {
   width: 270px;
   background-color: #b3d4d3;
   position: absolute;
