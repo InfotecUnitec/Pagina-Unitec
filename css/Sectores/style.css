@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+
+body {
+  margin: 0px;
+  font-family: Nunito;
+}
+
+.banner {
+  height: 240px;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-left: 5px;
+}
+
+.box2 {
+  width: 400px;
+  position: absolute;
+  height: auto;
+  z-index: 1;
+  left: 100px;
+  top: 3%;
+}
+.box2 h2 {
+  padding-left: 15px;
+  background-color: black;
+  color: white;
+  height: 50px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.marker {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+.triangulo {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 0 25px 40px;
+  border-color: transparent transparent transparent black;
+}
+
+.box2 p {
+  padding-left: 5px;
+  display: flex;
+}
+
+.Imagen img {
+  width: 100%;
+  height: 100%;
+}
+
+.box3 {
+  width: 400px;
+  position: absolute;
+  height: auto;
+  z-index: 1;
+  left: 60%;
+  bottom: 45%;
+}
+.box3 h2 {
+  padding-right: 15px;
+  background-color: black;
+  color: white;
+  height: 50px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.marker2 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+.triangulo2 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 40px 25px 0;
+  border-color: transparent black transparent transparent;
+}
+
+.Imagen2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.box4 {
+  width: 400px;
+  position: absolute;
+  height: auto;
+  z-index: 1;
+  left: 100px;
+  top: 40%;
+}
+.box4 h2 {
+  padding-left: 15px;
+  background-color: black;
+  color: white;
+  height: 50px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.marker3 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+.triangulo3 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 0 25px 40px;
+  border-color: transparent transparent transparent black;
+}
+
+.box4 p {
+  padding-left: 5px;
+  display: flex;
+}
+
+.Imagen img {
+  width: 100%;
+  height: 100%;
+}
+
+.box5 {
+  width: 400px;
+  position: absolute;
+  height: auto;
+  z-index: 1;
+  left: 60%;
+  bottom: 10%;
+}
+
+.box5 h2 {
+  padding-right: 15px;
+  background-color: black;
+  color: white;
+  height: 50px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.marker4 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+.triangulo4 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 40px 25px 0;
+  border-color: transparent black transparent transparent;
+}
+
+.Imagen2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.adapataciones3d {
+  width: 20%;
+  height: 20%;
+}
+
+.inicio {
+  position: relative;
+  width: 85%;
+  height: 1500px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}

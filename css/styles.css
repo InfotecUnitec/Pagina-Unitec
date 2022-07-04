@@ -19,7 +19,7 @@ section {
   background-color: rgb(170, 170, 187);
   display: flex;
   justify-content: right;
-  background-image: url("/src/img/bannerm prueba.jpg");
+  background-image: url("../src/img/bannerm prueba.jpg");
   background-size: 100% 100%;
   border: none;
 }
