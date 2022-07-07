@@ -1,10 +1,10 @@
 const src = [
-  "logo-late.jpeg",
-  "logo-edetec.jpeg",
-  "logo-tecnicas3d.jpeg",
-  "logo-mecatronica.jpeg",
-  "logolabtic.png",
-  "Infotec.png",
+  "logo-late.png",
+  "logo-edetec.png",
+  "logo-tecnicas3d2.png",
+  "logo-mecatronica.png",
+  "logo-labtic2.png",
+  "logo-infotec.png",
 ];
 const cards = [
   "Late",
