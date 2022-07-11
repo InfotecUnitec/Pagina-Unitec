@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .sectors {
-  background-color: #aedbce5d;
+  background-color: var(--light-main);
 }
 
 .sectors h2 {
   text-align: center;
-  color: rgb(75, 75, 75);
+  color: var(--letter);
   margin: 0;
 }
 
 .background-carrousel {
-  background-color: #eee;
+  background-color: var(--background);
   margin-left: auto;
   margin-right: auto;
   width: 80%;
@@ -51,7 +51,7 @@ input[type="radio"] {
   opacity: 0;
   display: flex;
   flex-direction: column;
-  background-color: #eee;
+  background-color: var(--background);
   transform: scale(0.6);
 }
 
@@ -64,7 +64,7 @@ input[type="radio"] {
 .carrousel-item .info-card {
   font-family: "Poppins", sans-serif;
   padding-left: 4%;
-  color: rgb(75, 75, 75);
+  color: var(--letter);
 }
 
 .left {
@@ -128,7 +128,7 @@ input[type="radio"] {
 }
 
 .info-container::-webkit-scrollbar {
-  background-color: #eee;
+  background-color: var(--background);
   width: 8px;
 }
 

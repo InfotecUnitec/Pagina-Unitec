@@ -1,6 +1,16 @@
+:root {
+  --background: #eee;
+  --main: #b3d4d3;
+  --dark-main: #aae6e4;
+  --light-main: #aedbce5d;
+  --letter: rgb(75, 75, 75);
+  --lightletter: #eceff1;
+  --footer: #384444;
+}
+
 .footer {
+  background-color: var(--footer);
   width: 100%;
-  background-color: #384444;
   position: relative;
   bottom: 0%;
   width: 100%;
@@ -15,5 +25,5 @@
 }
 
 .footer a {
-  color: #eceff1;
+  color: var(--lightletter);
 }

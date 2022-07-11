@@ -10,7 +10,7 @@
   margin-right: auto;
   width: 80%;
   height: 65%;
-  background-color: #b3d4d3;
+  background-color: var(--main);
   padding: 3px;
 }
 
@@ -19,11 +19,11 @@
   align-items: center;
   justify-content: center;
   z-index: 0;
-  background-color: #eee;
+  background-color: var(--background);
 }
 
 .section-map h2 {
   margin: 0px;
   text-align: center;
-  color: rgb(75, 75, 75);
+  color: var(--letter);
 }

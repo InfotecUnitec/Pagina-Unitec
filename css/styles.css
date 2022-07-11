@@ -7,7 +7,7 @@ body {
   padding: 0;
   font-family: "Nunito";
   font-size: 20px;
-  background-color: #eee;
+  background-color: var(--background);
 }
 
 section {
@@ -49,7 +49,7 @@ section {
   padding-left: 25px;
   font-family: "Poppins", monospace;
   -webkit-text-stroke: 1px rgb(255, 255, 255);
-  color: rgb(75, 75, 75);
+  color: var(--letter);
 }
 
 .banner p {
@@ -83,4 +83,8 @@ section {
   background-color: rgba(249, 249, 249, 0.5);
   transition: 0.1s;
   transform: scale(1.1, 1.1);
+}
+
+h2 {
+  padding-top: 0.5%;
 }

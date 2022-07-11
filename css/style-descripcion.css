@@ -1,12 +1,12 @@
 .description {
-  background-color: #eee;
+  background-color: var(--background);
   position: relative;
   z-index: 0;
 }
 
 .description h2 {
   text-align: center;
-  color: rgb(75, 75, 75);
+  color: var(--letter);
   margin: 0;
 }
 
@@ -20,20 +20,60 @@
   justify-content: center;
   width: 100%;
   height: auto;
-  padding-top: 3%;
+  padding-top: 2%;
+}
+
+.desc-news .card-news {
+  background-color: var(--light-main);
+  width: 80%;
+  height: auto;
+  overflow-y: scroll;
+}
+
+.new {
+  background-color: var(--main);
+  height: 97%;
+  width: auto;
+  margin: 1.5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.new img {
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+}
+
+.box-new {
+  position: absolute;
+  background-color: red;
+  width: 900px;
+  height: 700px;
+  left: 0;
+  bottom: 0;
+  transform: translate(-50%, 50%) rotate(32deg);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 10%,
+    rgba(255, 255, 255, 0.6) 20%,
+    rgba(255, 255, 255, 0.8) 40%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.info-new {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .desc-column {
   display: flex;
   flex-direction: column;
-  padding-top: 3%;
+  padding-top: 2%;
   width: 100%;
-}
-
-.desc-news .card {
-  background-color: #aedbce5d;
-  width: 80%;
-  height: auto;
 }
 
 .desc-column .card {
@@ -44,13 +84,13 @@
 }
 
 .card div {
-  background-color: #aedbce5d;
+  background-color: var(--light-main);
   width: 80%;
   height: 120px;
 }
 
 .content {
-  color: rgb(75, 75, 75);
+  color: var(--letter);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,7 +131,7 @@
 
 .desc-column .header {
   width: 45%;
-  background-color: #b3d4d3;
+  background-color: var(--main);
   position: absolute;
   height: auto;
   z-index: 1;
@@ -100,7 +140,7 @@
 }
 
 .header a {
-  color: rgb(75, 75, 75);
+  color: var(--letter);
   font-size: 80%;
   font-weight: 550;
   padding: 9%;
