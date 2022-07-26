@@ -65,6 +65,8 @@ input[type="radio"] {
   font-family: "Poppins", sans-serif;
   padding-left: 4%;
   color: var(--letter);
+  letter-spacing: -0.4px;
+  word-spacing: -0.7px;
 }
 
 .left {

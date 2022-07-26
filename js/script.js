@@ -58,7 +58,7 @@ scrolear.addEventListener("click", (e) => {
 //script map
 const mapa = document.querySelector("map");
 
-let map = L.map("map").setView([-34.906744887628925, -57.94279074422511], 16);
+let map = L.map("map").setView([-34.90679000781888, -57.94290231798726], 16);
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution:
@@ -73,7 +73,7 @@ let LabUnitec = L.icon({
   popupAnchor: [-15, -35], // point from which the popup should open relative to the iconAnchor
 });
 
-L.marker([-34.9066305063711, -57.94279074422511], { icon: LabUnitec })
+L.marker([-34.90679000781888, -57.94290231798726], { icon: LabUnitec })
   .addTo(map)
   .bindPopup("Laboratorio Principal")
   .openPopup();

@@ -30,6 +30,19 @@
   overflow-y: scroll;
 }
 
+.card-news::-webkit-scrollbar {
+  background-color: var(--background);
+  width: 10px;
+}
+
+.card-news::-webkit-scrollbar-thumb {
+  background-color: #00000033;
+}
+
+.card-news::-webkit-scrollbar-track {
+  background-color: #00000027;
+}
+
 .new {
   background-color: var(--main);
   height: 97%;
@@ -52,21 +65,42 @@
   height: 700px;
   left: 0;
   bottom: 0;
-  transform: translate(-50%, 50%) rotate(32deg);
+  transform: translate(-50%, 30%) rotate(32deg);
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.4) 10%,
-    rgba(255, 255, 255, 0.6) 20%,
+    rgba(255, 255, 255, 0.4) 15%,
+    rgba(255, 255, 255, 0.6) 25%,
     rgba(255, 255, 255, 0.8) 40%,
     rgba(255, 255, 255, 1) 100%
   );
 }
 
 .info-new {
+  width: 100%;
   position: absolute;
-  left: 0;
-  bottom: 0;
+  bottom: 3%;
+  color: var(--letter);
+  letter-spacing: -0.4px;
+  word-spacing: -0.7px;
+}
+
+.info-new h3 {
+  margin: 2%;
+}
+
+.info-new .date {
+  margin: 0;
+  margin-left: 2%;
+  font-size: 60%;
+  text-decoration: underline
+}
+
+.info-new .mini-desc {
+  margin: 0;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 90%;
 }
 
 .desc-column {
@@ -101,6 +135,8 @@
   padding-right: 10%;
   text-align: center;
   font-size: 80%;
+  letter-spacing: -0.4px;
+  word-spacing: -0.7px;
 }
 
 .card .image {
