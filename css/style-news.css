@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+
+:root {
+  --background: #eee;
+  --main: #b3d4d3;
+  --dark-main: #aae6e4;
+  --light-main: #aedbce5d;
+  --letter: rgb(75, 75, 75);
+  --lightletter: #eceff1;
+  --footer: #384444;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  font-family: "Nunito";
+}
+
+.header {
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: var(--main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tittle {
+  font-size: 200%;
+  margin: 0;
+  color: var(--letter);
+  text-align: center;
+}
+
+.card-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--light-main);
+  width: 80%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card h2 {
+  margin: 0;
+  color: var(--letter);
+}
+
+.info-new {
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 0;
+  color: var(--letter);
+  font-size: 130%;
+}
+
+.date {
+  margin: 0;
+  padding: 0.5%;
+  text-decoration: underline;
+  font-size: 90%;
+  font-weight: 550;
+  text-align: left;
+  width: 98%;
+  color: var(--letter);
+}

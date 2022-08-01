@@ -1,3 +1,10 @@
+a:visited,
+a:active,
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .description {
   background-color: var(--background);
   position: relative;
@@ -12,7 +19,6 @@
 
 .desc-container {
   display: flex;
-  flex-direction: row-reverse;
 }
 
 .desc-news {
@@ -21,6 +27,7 @@
   width: 100%;
   height: auto;
   padding-top: 2%;
+  flex-direction: row-reverse;
 }
 
 .desc-news .card-news {
@@ -65,7 +72,7 @@
   height: 700px;
   left: 0;
   bottom: 0;
-  transform: translate(-50%, 30%) rotate(32deg);
+  transform: translate(-35%, 40%) rotate(32deg);
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
@@ -93,7 +100,7 @@
   margin: 0;
   margin-left: 2%;
   font-size: 60%;
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 .info-new .mini-desc {
