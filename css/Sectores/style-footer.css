@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   background-color: rgb(0, 0, 0);
-  color: beige;
+  color: rgb(243, 243, 233);
   position: relative;
   bottom: 0%;
   width: 100%;
@@ -10,7 +10,6 @@
 
 .footer .contacts {
   padding-left: 2%;
-  padding-top: 1%;
   font-size: 15px;
   max-width: 50%;
 }

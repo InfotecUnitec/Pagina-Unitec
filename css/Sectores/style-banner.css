@@ -1,0 +1,81 @@
+
+
+
+.box div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  color: none;
+    margin-left: 5px;
+    
+}
+
+
+
+.box-adaptaciones3d{
+    background-color: #4f6dd1;
+    font-size: 16px;
+      -webkit-text-stroke: 1px #183a55;
+
+  }
+
+.box-edetec{
+    background-color: #d65845;
+    font-size: 16px;
+      -webkit-text-stroke: 1px #7a1b1e;
+
+}
+.box-infotec{
+    background-color: #F2FA5A;
+    font-size: 16px;
+    -webkit-text-stroke: 1px black;
+}
+.box-labtic{
+    background-color: #F2FA5A;
+}
+.box-late{
+    background-color: rgb(101, 98, 98);
+}
+.box-mecatronica{
+    background-color: #4110f3;
+    font-size: 16px;
+    -webkit-text-stroke: 1.4px #00b6c3;
+}
+
+.unitec-logo{
+position: absolute;
+left: 3%;
+top: 5%;
+height: 30%;
+cursor: pointer;
+}
+.unitec-logo:hover {
+    transform: scale(1.5);
+}
+
+.adaptaciones3d-logo{
+    width: 20%;
+}
+
+.edetec-logo{
+    width: 26%;
+}
+
+.infotec-logo{
+    width: 40%;
+}
+
+.labtic-logo{
+    width: 28%;
+    height: 120%;
+}
+
+.late-logo{
+    width: 23%;
+}
+
+.mecatronica-logo{
+    width: 23%;
+}
+

@@ -3,9 +3,15 @@
 body {
   margin: 0px;
 font-family: 'Poppins', sans-serif;
-  background: rgba(0, 0, 0, 0);
-background: linear-gradient(144deg, rgba(249, 249, 249, 1) 0%, rgba(255, 255, 169, 1) 100%);
 }
+.adaptaciones3d{background: linear-gradient(144deg, rgba(249, 249, 249, 1) 0%, rgba(123, 130, 255, 0.7) 100%);}
+.edetec{background: linear-gradient(144deg, rgba(249, 249, 249, 1) 0%, rgb(255, 170, 169) 100%);}
+.infotec{background: linear-gradient(144deg, rgba(242, 240, 167, 0.5) 0%, rgb(255, 255, 145) 100%);}
+.labtic{background: linear-gradient(144deg, rgba(161, 207, 240, 0.2) 0%, rgb(169, 231, 255) 100%);}
+.late{background: linear-gradient(144deg, rgba(249, 249, 249, 1) 0%, rgba(255, 255, 169, 1) 100%);}
+.mecatronica{background: linear-gradient(144deg, rgba(249, 249, 249, 1) 0%, rgb(36, 68, 209) 100%);}
+
+
 .banner {
   height: 240px;
 }
@@ -22,19 +28,8 @@ background: linear-gradient(144deg, rgba(249, 249, 249, 1) 0%, rgba(255, 255, 16
     box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.31);
     border-radius: 5px;
 }
-.infotec{
-  background-color: #F2FA5A;
-}
 
 
-.box div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  margin-left: 5px;
-}
 
 .box2 {
   width: 400px;
@@ -44,7 +39,7 @@ background: linear-gradient(144deg, rgba(249, 249, 249, 1) 0%, rgba(255, 255, 16
   left: 100px;
   top: 3%;
   overflow: hidden;
- padding: 20px; 
+  padding: 20px; 
 }
  .box2 h2 {
   padding-left: 15px;
@@ -60,6 +55,7 @@ background: linear-gradient(144deg, rgba(249, 249, 249, 1) 0%, rgba(255, 255, 16
   width: 100%;
   align-items: center;
   position: relative;
+  
 }
 .triangulo {
   width: 0;
