@@ -1,6 +1,5 @@
 .footer {
   width: 100%;
-  background-color: rgb(0, 0, 0);
   color: rgb(243, 243, 233);
   position: relative;
   bottom: 0%;
@@ -14,3 +13,22 @@
   max-width: 50%;
 }
 
+.footer-adaptaciones3d {
+  background-color: #4f6dd1;
+}
+
+.footer-edetec {
+  background-color: #d65845;
+}
+.footer-infotec {
+  background-color: #000000;
+}
+.footer-labtic {
+  background-color: #f2fa5a;
+}
+.footer-late {
+  background-color: rgb(101, 98, 98);
+}
+.footer-mecatronica {
+  background-color: #4110f3;
+}
