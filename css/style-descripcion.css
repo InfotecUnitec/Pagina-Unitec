@@ -19,6 +19,7 @@ a {
 
 .desc-container {
   display: flex;
+  flex-direction: row-reverse;
 }
 
 .desc-news {
@@ -27,7 +28,6 @@ a {
   width: 100%;
   height: auto;
   padding-top: 2%;
-  flex-direction: row-reverse;
 }
 
 .desc-news .card-news {
@@ -52,7 +52,7 @@ a {
 
 .new {
   background-color: var(--main);
-  height: 97%;
+  height: 97.6%;
   width: auto;
   margin: 1.5%;
   position: relative;

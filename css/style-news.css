@@ -27,7 +27,42 @@ body {
   align-items: center;
 }
 
+a:visited,
+a:active,
+a {
+  text-decoration: none;
+  color: var(--letter);
+}
+
+.homepage {
+  width: 7%;
+  height: 100%;
+  position: relative;
+  right: 73vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.homepage img {
+  width: 65%;
+  height: 65%;
+  margin-top: 1vh;
+}
+
+.homepage img:hover {
+  transform: scale(1.05);
+}
+
+.homepage p {
+  margin: 0;
+  position: relative;
+  bottom: 1vh;
+}
+
 .tittle {
+  position: fixed;
   font-size: 200%;
   margin: 0;
   color: var(--letter);
@@ -45,7 +80,7 @@ body {
 .card {
   background-color: var(--light-main);
   width: 80%;
-  height: 75%;
+  height: 80%;
   display: flex;
   align-items: center;
   flex-direction: column;
