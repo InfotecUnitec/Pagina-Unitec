@@ -29,9 +29,9 @@
   -webkit-text-stroke: 1px #162eb4;
 }
 .box-late {
-  background-color: rgb(101, 98, 98);
+  background-color: rgba(72, 94, 192, 0.304);
   font-size: 16px;
-  -webkit-text-stroke: 1px #7757ec;
+  -webkit-text-stroke: 1px #194261;
 }
 .box-mecatronica {
   background-color: #4110f3;
@@ -40,21 +40,29 @@
 }
 .unitec-box {
   position: absolute;
-  left: -9%;
-  top: 9%;
+  left:2%;
+  top: 6%;
   cursor: pointer;
-  text-align: center;
+  text-align: left;
+max-width: min-content;
+text-decoration: none;
+
 }
 .unitec-box p {
-  margin: 5px;
+  margin-top: 5px;
 }
 .unitec-logo {
-  width: 20%;
-  height: 30%;
+  width: 100%;
+  height: 100%;
 }
 .unitec-box:hover .unitec-logo {
   transform: scale(1.5);
+  transition: 0.2s;
 }
+
+.unitec-box:hover p {
+  -webkit-text-stroke: 1.4px #00c3a9;
+} 
 
 .adaptaciones3d-logo,
 .edetec-logo,

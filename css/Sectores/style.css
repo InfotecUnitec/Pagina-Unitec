@@ -73,7 +73,7 @@ body {
   height: auto;
   z-index: 1;
   left: 100px;
-  top: 3%;
+  top: 5%;
   overflow: hidden;
   padding: 20px;
 }
@@ -169,7 +169,7 @@ h3 {
   height: auto;
   z-index: 1;
   left: 60%;
-  bottom: 55%;
+  bottom: 49%;
   overflow: hidden;
   padding: 20px;
 }
@@ -210,7 +210,7 @@ h3 {
   height: auto;
   z-index: 1;
   left: 100px;
-  top: 40%;
+  top: 42%;
   overflow: hidden;
   padding: 20px;
 }
@@ -253,7 +253,7 @@ h3 {
   height: auto;
   z-index: 1;
   left: 60%;
-  bottom: 20%;
+  bottom: 12%;
   overflow: hidden;
   padding: 20px;
 }
@@ -296,7 +296,7 @@ h3 {
 .inicio {
   position: relative;
   width: 85%;
-  height: 1500px;
+  height: 1350px;
   background-color: none;
   margin-left: auto;
   margin-right: auto;
