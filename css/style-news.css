@@ -5,7 +5,7 @@
   --main: #b3d4d3;
   --dark-main: #aae6e4;
   --light-main: #aedbce5d;
-  --letter: rgb(75, 75, 75);
+  --letter: #4b4b4b;
   --lightletter: #eceff1;
   --footer: #384444;
 }
@@ -59,6 +59,8 @@ a {
   margin: 0;
   position: relative;
   bottom: 1vh;
+  letter-spacing: -0.5px;
+  font-size: 17px;
 }
 
 .tittle {
