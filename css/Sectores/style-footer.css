@@ -1,0 +1,34 @@
+.footer {
+  width: 100%;
+  color: rgb(243, 243, 233);
+  position: relative;
+  bottom: 0%;
+  width: 100%;
+  height: 100px;
+}
+
+.footer .contacts {
+  padding-left: 2%;
+  font-size: 15px;
+  max-width: 50%;
+}
+
+.footer-adaptaciones3d {
+  background-color: #4f6dd1;
+}
+
+.footer-edetec {
+  background-color: #d65845;
+}
+.footer-infotec {
+  background-color: #000000;
+}
+.footer-labtic {
+  background-color: #016a61;
+}
+.footer-late {
+  background-color: rgb(72, 94, 192);
+}
+.footer-mecatronica {
+  background-color: #4110f3;
+}

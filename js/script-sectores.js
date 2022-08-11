@@ -22,11 +22,19 @@ const descripciones = [
   "Laboratorio de desarrollo de Hardware y Software con orientación al uso de TIC`s..",
   "Espacio de extensión dedicado al desarrollo de software",
 ];
+const href = [
+  "/Pagina-Unitec/src/views/late.html",
+  "/Pagina-Unitec/src/views/edetec.html",
+  "/Pagina-Unitec/src/views/adaptaciones3d.html",
+  "/Pagina-Unitec/src/views/mecatronica.html",
+  "/Pagina-Unitec/src/views/labtic.html",
+  "/Pagina-Unitec/src/views/infotec.html",
+];
 const cardsContainer = document.querySelector(".carrousel-items");
 let actualCard = 0;
 
-const templateCard = (label, id, src, descripcion) => {
-  return `<div class="carrousel-item">
+const templateCard = (label, id, src, descripcion, href) => {
+  return `<a href="${href}" class="carrousel-item">
   <img src="./src/img/logo/${src}" />
   <div class="info-card">
   <h3>${label}</h3>
@@ -37,7 +45,7 @@ const templateCard = (label, id, src, descripcion) => {
   </div>
   </div>
   <div class="click-area" data-card="${id}"></div>
-  </div>`;
+  </a>`;
 };
 
 // cargamos todas las tajetas
@@ -47,7 +55,7 @@ cards.forEach((cardLabel, i) => {
     cardLabel,
     i,
     src[i],
-    descripciones[i]
+    descripciones[i], href[i]
   );
 });
 

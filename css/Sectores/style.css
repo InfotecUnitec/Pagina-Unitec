@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+.adaptaciones3d {
+  background: linear-gradient(
+    144deg,
+    rgba(249, 249, 249, 1) 0%,
+    rgba(123, 130, 255, 0.7) 100%
+  );
+}
+.edetec {
+  background: linear-gradient(
+    144deg,
+    rgba(249, 249, 249, 1) 0%,
+    rgb(255, 170, 169) 100%
+  );
+}
+.infotec {
+  background: linear-gradient(
+    144deg,
+    rgba(242, 240, 167, 0.5) 0%,
+    rgb(255, 255, 145) 100%
+  );
+}
+.labtic {
+  background: linear-gradient(
+    144deg,
+    rgba(161, 207, 240, 0.2) 0%,
+    rgb(169, 231, 255) 100%
+  );
+}
+.late {
+  background: linear-gradient(
+    144deg,
+    rgba(249, 249, 249, 1) 0%,
+    rgba(255, 255, 169, 1) 100%
+  );
+}
+.mecatronica {
+  background: linear-gradient(
+    144deg,
+    rgba(249, 249, 249, 1) 0%,
+    rgb(36, 68, 209) 100%
+  );
+}
+
+.banner {
+  height: 240px;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box2,
+.box3,
+.box4,
+.box5 {
+  background: #fefbe7;
+  box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.31);
+  border-radius: 5px;
+}
+
+.box2 {
+  width: 400px;
+  position: absolute;
+  height: auto;
+  z-index: 1;
+  left: -5vh;
+  top: 5%;
+  overflow: hidden;
+  padding: 20px;
+}
+.box2 h2 {
+  padding-left: 15px;
+  background-color: black;
+  color: white;
+  height: 50px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.marker {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+.triangulo {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 0 25px 40px;
+  border-color: transparent transparent transparent black;
+}
+
+h3 {
+  padding: 1px;
+  margin: 0px;
+  text-align: center;
+  transform: translateY(-120%);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.adaptaciones3d h3 {
+  background-color: rgb(0, 17, 255);
+}
+.edetec h3 {
+  background-color: rgb(255, 44, 44);
+}
+.infotec h3 {
+  background-color: rgb(242, 245, 53);
+  color: black;
+}
+.labtic h3 {
+  background-color: rgb(240, 243, 83);
+  color: black;
+}
+.late h3 {
+  background-color: rgb(58, 202, 171);
+}
+.mecatronica h3 {
+  background-color: rgb(45, 24, 236);
+}
+
+.box2 .Contenido,
+.box3 .Contenido,
+.box4 .Contenido,
+.box5 .Contenido {
+  width: 100%;
+  position: absolute;
+  bottom: -48%;
+  left: 0;
+  margin: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  color: white;
+  line-height: 1.4;
+  transition: 0.25s;
+  text-align: left;
+  height: 45%;
+}
+
+.card-sector:hover .Contenido {
+  bottom: 0;
+}
+.box2 .Contenido p,
+.box4 .Contenido p,
+.box3 .Contenido p,
+.box5 .Contenido p {
+  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  margin: 0px;
+}
+
+.box3 {
+  width: 400px;
+  position: absolute;
+  height: auto;
+  z-index: 1;
+  right: -5vh;
+  bottom: 49%;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.box3 h2 {
+  padding-right: 15px;
+  background-color: black;
+  color: white;
+  height: 50px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.marker2 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+.triangulo2 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 40px 25px 0;
+  border-color: transparent black transparent transparent;
+}
+
+.Imagen2 {
+  width: 100%;
+  height: 100%;
+}
+
+.box4 {
+  width: 400px;
+  position: absolute;
+  height: auto;
+  z-index: 1;
+  left: -5vh;
+  top: 42%;
+  overflow: hidden;
+  padding: 20px;
+}
+.box4 h2 {
+  padding-left: 15px;
+  background-color: black;
+  color: white;
+  height: 50px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.marker3 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+.triangulo3 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 0 25px 40px;
+  border-color: transparent transparent transparent black;
+}
+
+.box4 p {
+  padding-left: 5px;
+  display: flex;
+}
+
+.Imagen img {
+  width: 100%;
+  height: 100%;
+}
+
+.box5 {
+  width: 400px;
+  position: absolute;
+  height: auto;
+  z-index: 1;
+  right: -5vh;
+  bottom: 12%;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.box5 h2 {
+  padding-right: 15px;
+  background-color: black;
+  color: white;
+  height: 50px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.marker4 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+.triangulo4 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 40px 25px 0;
+  border-color: transparent black transparent transparent;
+}
+
+.Imagen2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.adapataciones3d {
+  width: 20%;
+  height: 20%;
+}
+
+.inicio {
+  position: relative;
+  width: 85%;
+  height: 1350px;
+  background-color: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-sector {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
