@@ -7,20 +7,20 @@ export const handle: Handle = async ({ event, resolve }) => {
 	/*	event.locals.user = await authenticateUser(event);
 
 	console.log('hook', event.url.pathname);
-	if (event.url.pathname.startsWith('/admin')) {
-		console.log('hook redirect');
-		if (!event.locals.user) throw redirect(303, '/login');
-	}
-
+	
 	const response = await resolve(event);
 
 	return response;
-*/
+	*/
 
 	const { session, supabaseClient } = await getSupabase(event);
 
 	event.locals.sb = supabaseClient;
 	event.locals.session = session;
+
+	if (event.url.pathname.startsWith('/admin')) {
+		if (!session) throw redirect(303, '/login');
+	}
 
 	return resolve(event);
 };

@@ -3,10 +3,18 @@
 	import AdminSidebar from '$lib/components/AdminSidebar.svelte';
 	import AdminDrawer from '$lib/components/AdminDrawer.svelte';
 	import type { LayoutData } from './$types';
+	import { enhance, type SubmitFunction } from '$app/forms';
+	import { supabaseClient } from '$lib/supabase';
 
 	let showDrawer: boolean = false;
 
 	export let data: LayoutData;
+
+	const submitLogout: SubmitFunction = async ({ cancel }) => {
+		const { error } = await supabaseClient.auth.signOut();
+		if (error) console.log(error);
+		cancel();
+	};
 </script>
 
 <AdminNavbar
@@ -25,7 +33,7 @@
 		<slot />
 	</main>
 	{#if data.session}
-		<form method="POST" action="/logout">
+		<form method="POST" action="/logout" use:enhance={submitLogout}>
 			<button type="submit">salir</button>
 		</form>
 	{/if}
