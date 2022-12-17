@@ -12,6 +12,7 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@supabase/auth-helpers-sveltekit": "^0.8.6",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
@@ -34,6 +35,7 @@
 	"type": "module",
 	"dependencies": {
 		"@supabase/supabase-js": "^2.1.0",
-		"dotenv": "^16.0.3"
+		"dotenv": "^16.0.3",
+		"svelte-hero-icons": "^4.1.3"
 	}
 }
