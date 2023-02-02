@@ -6,7 +6,7 @@
 </script>
 
 <a
-	class=" bg-rose-200  relative  w-full h-64 bg-cover shadow-xl"
+	class=" bg-rose-200  relative  w-full h-64 bg-cover shadow-xl hover:-translate-y-2 duration-75 hover:shadow-2xl"
 	style={`background-image: url('${image}')`}
 	{href}
 >

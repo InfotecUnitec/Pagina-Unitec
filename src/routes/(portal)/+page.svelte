@@ -12,8 +12,8 @@
 <main class="max-w-screen overflow-x-hidden">
 	<SectionHero />
 	<SectionInfo />
-	<SectionNovedades />
 	<SectionSectores />
+	<SectionNovedades />
 	<SectionMap />
 </main>
 <Footer />

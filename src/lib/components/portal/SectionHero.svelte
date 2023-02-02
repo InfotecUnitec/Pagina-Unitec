@@ -2,12 +2,11 @@
 	import { supabaseClient } from '$lib/supabase';
 	import { onMount } from 'svelte';
 
-	export let headerParagraph: string = 'hola que tal soy un texto que va en el header';
+	export let headerParagraph: string = 'UNITEC';
 	let src = '';
 
 	onMount(async () => {
-		console.log(await supabaseClient.from('foo').select('*'));
-		const { data } = await supabaseClient.storage.from('images').getPublicUrl('public/hero.jpg');
+		const { data } = await supabaseClient.storage.from('imagenes').getPublicUrl('hero.jpg');
 		src = data.publicUrl;
 	});
 </script>
