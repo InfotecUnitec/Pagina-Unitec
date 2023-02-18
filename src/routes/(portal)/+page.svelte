@@ -6,14 +6,17 @@
 	import SectionNovedades from '$lib/components/portal/SectionNovedades.svelte';
 	import SectionSectores from '$lib/components/portal/SectionSectores.svelte';
 	import SectionMap from '$lib/components/portal/SectionMap.svelte';
+	import type { PageData } from './$types';
+
+	export let data: PageData;
 </script>
 
 <Navbar />
 <main class="max-w-screen overflow-x-hidden">
-	<SectionHero />
+	<SectionHero headerUrl={data.headerUrl} />
 	<SectionInfo />
-	<SectionSectores />
-	<SectionNovedades />
+	<SectionSectores sectores={data.sectores} />
+	<SectionNovedades novedades={data.novedades} />
 	<SectionMap />
 </main>
 <Footer />

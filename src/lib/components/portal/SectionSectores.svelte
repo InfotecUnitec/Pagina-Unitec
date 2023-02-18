@@ -2,9 +2,9 @@
 	import { supabaseClient } from '$lib/supabase';
 	import type { PostgrestResponse } from '@supabase/supabase-js';
 
-	let sectores: { nombre: string; descripcion: string; logo: string }[] = [];
+	export let sectores: { nombre: string; descripcion: string; logo: string }[] = [];
 	let sectorSelected = 0;
-
+	/*
 	(async () => {
 		const {
 			data,
@@ -27,7 +27,7 @@
 					logo: data.publicUrl ? data.publicUrl : 'empty.png'
 				};
 			});
-	})();
+	})();*/
 </script>
 
 <section class="h-[500px] flex flex-col justify-center items-center gap-10  bg-sky-100">
@@ -41,19 +41,25 @@
 	<div class="grow flex flex-col gap-20">
 		<div class="flex gap-10">
 			{#each sectores as sector, i}
-				<img
-					src={sector.logo}
-					alt="logo de un sector"
-					class:sector_selected={i == sectorSelected}
-					class="w-32 h-32 rounded-full opacity-50 hover:opacity-100 hover:cursor-pointer duration-75"
-					on:click={() => (sectorSelected = i)}
-				/>
+				<button on:click={() => (sectorSelected = i)}>
+					<img
+						src={sector.logo}
+						alt="logo de un sector"
+						class:sector_selected={i == sectorSelected}
+						class="w-32 h-32 rounded-full opacity-50 hover:opacity-100 hover:cursor-pointer duration-75"
+					/>
+				</button>
 			{/each}
 		</div>
 		{#if sectores.length !== 0}
-			<p class="text-xl font-light texto-gray-600 text-center">
-				{sectores[sectorSelected].descripcion}
-			</p>
+			<div>
+				<p class="text-xl font-light text-gray-600 text-center">
+					{sectores[sectorSelected].descripcion}
+				</p>
+				<a class="absolute right-10" href={`/sectores/${sectores[sectorSelected].nombre}`}
+					>Ver mas
+				</a>
+			</div>
 		{/if}
 	</div>
 </section>

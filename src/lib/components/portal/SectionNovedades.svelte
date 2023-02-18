@@ -4,8 +4,9 @@
 	import CardNovedad from './CardNovedad.svelte';
 
 	// importar esto en la carga de la pagina
-	let novedades: { date: string; title: string; image: string }[] = [];
+	export let novedades: { date: string; title: string; image: string }[] = [];
 
+	/*
 	(async () => {
 		const {
 			data,
@@ -29,7 +30,7 @@
 					image: data.publicUrl ? data.publicUrl : 'empty.png'
 				};
 			});
-	})();
+	})();*/
 </script>
 
 <section class="bg-white h-screen flex flex-col items-center gap-5">

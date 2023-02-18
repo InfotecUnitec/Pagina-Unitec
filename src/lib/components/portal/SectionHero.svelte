@@ -1,17 +1,14 @@
 <script lang="ts">
-	import { supabaseClient } from '$lib/supabase';
-	import { onMount } from 'svelte';
-
 	export let headerParagraph: string = 'UNITEC';
-	let src = '';
+	export let headerUrl: string = '';
 
-	onMount(async () => {
+	/*onMount(async () => {
 		const { data } = await supabaseClient.storage.from('imagenes').getPublicUrl('hero.jpg');
 		src = data.publicUrl;
-	});
+	})*/
 </script>
 
-<header style={`background-image: url('${src}')`} class="h-screen w-screen bg-cover">
+<header style={`background-image: url('${headerUrl}')`} class="h-screen w-screen bg-cover">
 	<div
 		class="gap-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center"
 	>
