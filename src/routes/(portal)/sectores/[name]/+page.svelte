@@ -20,9 +20,12 @@
 				{/each}
 			</div>
 		</aside>
-		<article class="grow p-10">
+		<article class="w-3/4 p-10">
 			<h1 class="text-3xl text-sky-500 font-bold">{data.sector.name}</h1>
-			<h3 class="text-xl font-light text-stone-700">{data.sector.descripcion}</h3>
+			<p class="text-xl font-light text-stone-700 pt-5">{data.sector.descripcion}</p>
+			<p class="text-xl font-light text-stone-700 pt-5">{data.sector.informacion}</p>
+			<h1 class="text-2xl text-sky-500 font-bold pt-10">¿Cual es nuestro objetivo?</h1>
+			<p class="text-xl font-light text-stone-700 pt-5">{data.sector.objetivo}</p>
 		</article>
 	</div>
 </main>

@@ -38,7 +38,7 @@
 			realizan
 		</p>
 	</div>
-	<div class="grow flex flex-col gap-20">
+	<div class="grow flex flex-col items-center gap-20">
 		<div class="flex gap-10">
 			{#each sectores as sector, i}
 				<button on:click={() => (sectorSelected = i)}>
@@ -46,7 +46,7 @@
 						src={sector.logo}
 						alt="logo de un sector"
 						class:sector_selected={i == sectorSelected}
-						class="w-32 h-32 rounded-full opacity-50 hover:opacity-100 hover:cursor-pointer duration-75"
+						class="w-32 h-32 rounded-full opacity-50 hover:opacity-100 bg-white  hover:cursor-pointer duration-75"
 					/>
 				</button>
 			{/each}
