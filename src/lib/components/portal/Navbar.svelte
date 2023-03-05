@@ -6,7 +6,7 @@
 		},
 		{
 			name: 'Ultimas novedades',
-			href: '#'
+			href: '/novedades'
 		},
 		{
 			name: 'Sectores',

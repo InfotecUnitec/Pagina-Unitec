@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Navbar from '$lib/components/portal/Navbar.svelte';
-	import Footer from '$lib/components/portal/Footer.svelte';
 	import SectionHero from '$lib/components/portal/SectionHero.svelte';
 	import SectionInfo from '$lib/components/portal/SectionInfo.svelte';
 	import SectionNovedades from '$lib/components/portal/SectionNovedades.svelte';
@@ -11,12 +9,10 @@
 	export let data: PageData;
 </script>
 
-<Navbar />
-<main class="max-w-screen overflow-x-hidden">
+<main class="max-w-screen overflow-x-hidden overflow-y-hidden">
 	<SectionHero headerUrl={data.headerUrl} />
 	<SectionInfo />
 	<SectionSectores sectores={data.sectores} />
-	<SectionNovedades novedades={data.novedades} />
+	<SectionNovedades novedades={data.novedades} sectionClass="mb-10" />
 	<SectionMap />
 </main>
-<Footer />

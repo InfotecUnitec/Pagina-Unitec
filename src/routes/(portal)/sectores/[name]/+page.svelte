@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Navbar from '$lib/components/portal/Navbar.svelte';
-	import Footer from '$lib/components/portal/Footer.svelte';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -8,7 +6,6 @@
 	console.log(data);
 </script>
 
-<Navbar />
 <main class="max-w-screen overflow-x-hidden h-screen pt-24">
 	<div class="flex h-full">
 		<aside class="w-1/4 flex flex-col items-center pt-10 border-r border-stone-300 gap-3">
@@ -29,4 +26,3 @@
 		</article>
 	</div>
 </main>
-<Footer />

@@ -4,8 +4,8 @@
 	import CardNovedad from './CardNovedad.svelte';
 
 	// importar esto en la carga de la pagina
-	export let novedades: { date: string; title: string; image: string }[] = [];
-
+	export let novedades: { date: string; title: string; image: string; id: number }[] = [];
+	export let sectionClass: string = '';
 	/*
 	(async () => {
 		const {
@@ -33,11 +33,16 @@
 	})();*/
 </script>
 
-<section class="bg-white h-screen flex flex-col items-center gap-5">
+<section class={`bg-white h-screen flex flex-col items-center gap-5 ${sectionClass}`}>
 	<h1 class="text-center pt-10 text-4xl font-semibold text-sky-500">Ultimas novedades</h1>
 	<div class=" flex-col w-2/3 items-center justify-center gap-5 grid grid-cols-2">
 		{#each novedades as novedad}
-			<CardNovedad title={novedad.title} image={novedad.image} date={novedad.date} />
+			<CardNovedad
+				title={novedad.title}
+				image={novedad.image}
+				date={novedad.date}
+				href={`/novedades/${novedad.id}`}
+			/>
 		{/each}
 	</div>
 </section>

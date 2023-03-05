@@ -3,6 +3,8 @@
 	import { supabaseClient } from '$lib/supabase';
 	import { onMount } from 'svelte';
 	import '../app.css';
+	import Navbar from '$lib/components/portal/Navbar.svelte';
+	import Footer from '$lib/components/portal/Footer.svelte';
 
 	// si el estado de autenticacion cambia se invalida la carga de todas las page
 	onMount(() => {
@@ -18,4 +20,6 @@
 	});
 </script>
 
+<Navbar />
 <slot />
+<Footer />

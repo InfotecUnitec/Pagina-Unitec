@@ -4,7 +4,7 @@ import { supabaseClient } from '$lib/supabase';
 import type { PostgrestResponse } from '@supabase/supabase-js';
 
 export const load: PageLoad = async () => {
-	let novedades: { date: string; title: string; image: string }[] = [];
+	let novedades: { date: string; title: string; image: string; id: number }[] = [];
 	let sectores: { nombre: string; descripcion: string; logo: string }[] = [];
 
 	const { data: headerData } = await supabaseClient.storage
@@ -20,14 +20,19 @@ export const load: PageLoad = async () => {
 		title: string;
 		id: number;
 		imagen: string;
-	}> = await supabaseClient.from('novedades').select('*');
+	}> = await supabaseClient
+		.from('novedades')
+		.select('*')
+		.order('created_at', { ascending: false })
+		.limit(4);
 	if (dataNovedades)
 		novedades = dataNovedades.map((novedad) => {
 			const { data } = supabaseClient.storage.from('imagenes').getPublicUrl(novedad.imagen);
 			return {
 				date: new Date(novedad.created_at).toLocaleDateString(),
 				title: novedad.title,
-				image: data.publicUrl ? data.publicUrl : 'empty.png'
+				image: data.publicUrl ? data.publicUrl : 'empty.png',
+				id: novedad.id
 			};
 		});
 
