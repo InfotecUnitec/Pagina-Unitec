@@ -9,38 +9,32 @@ export const load: PageLoad = async () => {
 		},
 		{
 			nombre: 'EDETEC',
-			descripcion:
-				' Espacio de desarrollo de rampas tecnológicas para la accesibilidad e inclusión de PcD',
+			descripcion: ' Espacio de extension EDETEC',
 			logo: 'logos/logo-edetec.png'
 		},
 		{
 			nombre: 'Proyecto Arduino',
-			descripcion:
-				' Espacio de desarrollo de rampas tecnológicas para la accesibilidad e inclusión de PcD bajo el uso del microcontrolador Arduino',
+			descripcion: ' Espacio de extension Proyecto Arduino',
 			logo: 'logos/logo-arduino.png'
 		},
 		{
 			nombre: 'Adpataciones Inclusivas en 3D',
-			descripcion:
-				' Espacio de extensión dedicado a la realización de piezas en 3D como repuesto de las mismas impresoras, Switch y varios a requerimiento de los otros espacios de extensión.',
+			descripcion: ' Espacio de extensión Adaptaciones Inclusivas en 3D',
 			logo: 'logos/logo-tecnicas3d.png'
 		},
 		{
 			nombre: 'Mecatrónica ',
-			descripcion:
-				' espacio de extensión dedicado a la investigación vinculada al uso de las Tecnologías de la Información y Comunicación (TIC) dentro del área de la discapacidad entre las que se destacan la de DOMOTICA, ELECTROMEDICINA.',
+			descripcion: ' espacio de extensión Mecatronica.',
 			logo: 'logos/logo-mecatronica.png'
 		},
 		{
 			nombre: 'LabTIC  ',
-			descripcion:
-				'espacio dedicado a la adaptación de computadoras que son reacondicionadas por el “LATE”, instalando software propietario (desarrollado por la misma área de LabTIC) o software asistivo (lectores de pantalla, sistemas aumentativos y alternativos de comunicación, magnificadores, teclados virtuales, sintetizadores de voz, motores de síntesis de voz, mouses ópticos, etc.) ',
+			descripcion: 'Espacio de extension LabTIC',
 			logo: 'logos/logo-labtic.png'
 		},
 		{
 			nombre: 'Infotec  ',
-			descripcion:
-				'espacio dedicado de extension dedicado al desarrollo web, centralizado en la enseñanza de Javascripr,HTML,CSS y manejo de Bases de Datos a nivel basico',
+			descripcion: 'espacio de extension Infotec',
 			logo: 'logos/logo-infotec.png'
 		}
 	];

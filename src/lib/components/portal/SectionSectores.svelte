@@ -28,6 +28,7 @@
 				};
 			});
 	})();*/
+	// console.log(window.innerWidth);
 </script>
 
 <section
