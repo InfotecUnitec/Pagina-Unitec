@@ -3,7 +3,7 @@
 
 <section
 	id="section-nosotros"
-	class="h-96 flex flex-col justify-center items-center gap-3 ml-24 mr-24"
+	class="h-96 flex flex-col justify-center items-center gap-3 bg-sky-100 px-24"
 >
 	<h1 class="text-4xl font-extrabold text-sky-500">Nuestro objetivo</h1>
 	<p class="text-xl font-light texto-gray-600 ">

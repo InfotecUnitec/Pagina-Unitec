@@ -1,40 +1,10 @@
 <script lang="ts">
-	// import { supabaseClient } from '$lib/supabase';
-	// import type { PostgrestResponse } from '@supabase/supabase-js';
-
 	export let sectores: { nombre: string; descripcion: string; logo: string }[] = [];
 	let sectorSelected = 0;
-	/*
-	(async () => {
-		const {
-			data,
-			error
-		}: PostgrestResponse<{
-			created_at: string;
-			integrantes: JSON;
-			descripcion: string;
-			id: number;
-			logo: string;
-			name: string;
-		}> = await supabaseClient.from('sectores').select('*');
 
-		if (data)
-			sectores = data.map((sector) => {
-				const { data } = supabaseClient.storage.from('imagenes').getPublicUrl(sector.logo);
-				return {
-					nombre: sector.name,
-					descripcion: sector.descripcion,
-					logo: data.publicUrl ? data.publicUrl : 'empty.png'
-				};
-			});
-	})();*/
-	// console.log(window.innerWidth);
 </script>
 
-<section
-	id="section-sectores"
-	class="h-auto flex flex-col justify-center items-center gap-10  bg-sky-100"
->
+<section id="section-sectores" class="h-auto flex flex-col justify-center items-center gap-10  ">
 	<div class="pt-20">
 		<h1 class="text-4xl font-extrabold text-sky-500 text-center">Estructura</h1>
 		<p class="text-xl font-light texto-gray-600 text-center pt-5">

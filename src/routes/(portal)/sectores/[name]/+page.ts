@@ -188,7 +188,7 @@ export const load: PageLoad = async ({ params }) => {
 				}
 			],
 			objetivo:
-				'espacio dedicado de extension dedicado al desarrollo web, centralizado en la enseñanza de Javascripr,HTML,CSS y manejo de Bases de Datos a nivel basico.'
+				'espacio de extension dedicado al desarrollo web, centralizado en la enseñanza de Javascripr,HTML,CSS y manejo de Bases de Datos a nivel basico.'
 		}
 	};
 	return {

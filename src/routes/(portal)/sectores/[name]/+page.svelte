@@ -17,7 +17,7 @@
 	console.log(data);
 </script>
 
-<main class="max-w-screen overflow-x-hidden pt-24">
+<main class="max-w-screen overflow-x-hidden pt-24 h-screen">
 	<div class="flex h-full">
 		<aside class="w-1/4 flex flex-col items-center pt-10 border-r border-stone-300 gap-3 mb-10">
 			<img alt="logo" src={data.sector.logo} class="rounded-full aspect-square w-4/6" />

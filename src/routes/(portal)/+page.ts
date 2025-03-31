@@ -40,7 +40,7 @@ export const load: PageLoad = async () => {
 	];
 
 	return {
-		headerUrl: 'hero.jpg',
+		headerUrl: 'banner.jpg',
 		sectores
 	};
 };
